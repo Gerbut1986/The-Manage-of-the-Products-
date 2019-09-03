@@ -1,0 +1,44 @@
+C:\Users\vdino\Downloads\C# - Andrei\Windows Forms\All_Projects\Task_7(UseOfAdditionalForms)\bin\Debug\Task_7(UseOfAdditionalForms).exe.config
+C:\Users\vdino\Downloads\C# - Andrei\Windows Forms\All_Projects\Task_7(UseOfAdditionalForms)\bin\Debug\Task_7(UseOfAdditionalForms).exe
+C:\Users\vdino\Downloads\C# - Andrei\Windows Forms\All_Projects\Task_7(UseOfAdditionalForms)\bin\Debug\Task_7(UseOfAdditionalForms).pdb
+C:\Users\vdino\Downloads\C# - Andrei\Windows Forms\All_Projects\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7(UseOfAdditionalForms).csprojAssemblyReference.cache
+C:\Users\vdino\Downloads\C# - Andrei\Windows Forms\All_Projects\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7_UseOfAdditionalForms_.productForm.resources
+C:\Users\vdino\Downloads\C# - Andrei\Windows Forms\All_Projects\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7_UseOfAdditionalForms_.Properties.Resources.resources
+C:\Users\vdino\Downloads\C# - Andrei\Windows Forms\All_Projects\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7(UseOfAdditionalForms).csproj.GenerateResource.cache
+C:\Users\vdino\Downloads\C# - Andrei\Windows Forms\All_Projects\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7(UseOfAdditionalForms).csproj.CoreCompileInputs.cache
+C:\Users\vdino\Downloads\C# - Andrei\Windows Forms\All_Projects\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7(UseOfAdditionalForms).exe
+C:\Users\vdino\Downloads\C# - Andrei\Windows Forms\All_Projects\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7(UseOfAdditionalForms).pdb
+C:\Users\vdino\Downloads\C# - Andrei\Windows Forms\All_Projects\Task_7(UseOfAdditionalForms)\bin\Debug\Data\MyDB.mdf
+C:\Users\vdino\Downloads\C# - Andrei\Windows Forms\All_Projects\Task_7(UseOfAdditionalForms)\bin\Debug\Data\MyDB_log.ldf
+C:\Users\vdino\Downloads\C# - Andrei\Windows Forms\All_Projects\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7_UseOfAdditionalForms_.Form2.resources
+C:\Users\vdino\Downloads\C# - Andrei\Windows Forms\All_Projects\Task_7(UseOfAdditionalForms)\bin\Debug\EntityFramework.dll
+C:\Users\vdino\Downloads\C# - Andrei\Windows Forms\All_Projects\Task_7(UseOfAdditionalForms)\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\vdino\Downloads\C# - Andrei\Windows Forms\All_Projects\Task_7(UseOfAdditionalForms)\bin\Debug\EntityFramework.xml
+C:\Users\vdino\Downloads\C# - Andrei\Windows Forms\All_Projects\Task_7(UseOfAdditionalForms)\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\vdino\Downloads\C# - Andrei\Windows Forms\All_Projects\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7(UseOfAdditionalForms).csproj.CopyComplete
+C:\Users\Admin\Documents\Task_7(UseOfAdditionalForms)\bin\Debug\Data\MyDB.mdf
+C:\Users\Admin\Documents\Task_7(UseOfAdditionalForms)\bin\Debug\Data\MyDB_log.ldf
+C:\Users\Admin\Documents\Task_7(UseOfAdditionalForms)\bin\Debug\Task_7(UseOfAdditionalForms).exe.config
+C:\Users\Admin\Documents\Task_7(UseOfAdditionalForms)\bin\Debug\Task_7(UseOfAdditionalForms).exe
+C:\Users\Admin\Documents\Task_7(UseOfAdditionalForms)\bin\Debug\Task_7(UseOfAdditionalForms).pdb
+C:\Users\Admin\Documents\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7_UseOfAdditionalForms_.productForm.resources
+C:\Users\Admin\Documents\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7_UseOfAdditionalForms_.Form2.resources
+C:\Users\Admin\Documents\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7_UseOfAdditionalForms_.Properties.Resources.resources
+C:\Users\Admin\Documents\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7(UseOfAdditionalForms).csproj.GenerateResource.cache
+C:\Users\Admin\Documents\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7(UseOfAdditionalForms).csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7(UseOfAdditionalForms).exe
+C:\Users\Admin\Documents\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7(UseOfAdditionalForms).pdb
+C:\Users\Admin\Documents\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7(UseOfAdditionalForms).csprojAssemblyReference.cache
+C:\Users\Admin\Documents\The-Manage-of-the-Products-\Task_7(UseOfAdditionalForms)\bin\Debug\Data\MyDB.mdf
+C:\Users\Admin\Documents\The-Manage-of-the-Products-\Task_7(UseOfAdditionalForms)\bin\Debug\Data\MyDB_log.ldf
+C:\Users\Admin\Documents\The-Manage-of-the-Products-\Task_7(UseOfAdditionalForms)\bin\Debug\Task_7(UseOfAdditionalForms).exe.config
+C:\Users\Admin\Documents\The-Manage-of-the-Products-\Task_7(UseOfAdditionalForms)\bin\Debug\Task_7(UseOfAdditionalForms).exe
+C:\Users\Admin\Documents\The-Manage-of-the-Products-\Task_7(UseOfAdditionalForms)\bin\Debug\Task_7(UseOfAdditionalForms).pdb
+C:\Users\Admin\Documents\The-Manage-of-the-Products-\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7(UseOfAdditionalForms).csprojAssemblyReference.cache
+C:\Users\Admin\Documents\The-Manage-of-the-Products-\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7_UseOfAdditionalForms_.productForm.resources
+C:\Users\Admin\Documents\The-Manage-of-the-Products-\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7_UseOfAdditionalForms_.Form2.resources
+C:\Users\Admin\Documents\The-Manage-of-the-Products-\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7_UseOfAdditionalForms_.Properties.Resources.resources
+C:\Users\Admin\Documents\The-Manage-of-the-Products-\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7(UseOfAdditionalForms).csproj.GenerateResource.cache
+C:\Users\Admin\Documents\The-Manage-of-the-Products-\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7(UseOfAdditionalForms).csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\The-Manage-of-the-Products-\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7(UseOfAdditionalForms).exe
+C:\Users\Admin\Documents\The-Manage-of-the-Products-\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7(UseOfAdditionalForms).pdb
