@@ -42,3 +42,16 @@ C:\Users\Admin\Documents\The-Manage-of-the-Products-\Task_7(UseOfAdditionalForms
 C:\Users\Admin\Documents\The-Manage-of-the-Products-\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7(UseOfAdditionalForms).csproj.CoreCompileInputs.cache
 C:\Users\Admin\Documents\The-Manage-of-the-Products-\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7(UseOfAdditionalForms).exe
 C:\Users\Admin\Documents\The-Manage-of-the-Products-\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7(UseOfAdditionalForms).pdb
+D:\EPAM Academy\GitHub_Gerbut1986\The-Manage-of-the-Products-\Task_7(UseOfAdditionalForms)\bin\Debug\Data\MyDB.mdf
+D:\EPAM Academy\GitHub_Gerbut1986\The-Manage-of-the-Products-\Task_7(UseOfAdditionalForms)\bin\Debug\Data\MyDB_log.ldf
+D:\EPAM Academy\GitHub_Gerbut1986\The-Manage-of-the-Products-\Task_7(UseOfAdditionalForms)\bin\Debug\Task_7(UseOfAdditionalForms).exe.config
+D:\EPAM Academy\GitHub_Gerbut1986\The-Manage-of-the-Products-\Task_7(UseOfAdditionalForms)\bin\Debug\Task_7(UseOfAdditionalForms).exe
+D:\EPAM Academy\GitHub_Gerbut1986\The-Manage-of-the-Products-\Task_7(UseOfAdditionalForms)\bin\Debug\Task_7(UseOfAdditionalForms).pdb
+D:\EPAM Academy\GitHub_Gerbut1986\The-Manage-of-the-Products-\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7(UseOfAdditionalForms).csprojAssemblyReference.cache
+D:\EPAM Academy\GitHub_Gerbut1986\The-Manage-of-the-Products-\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7_UseOfAdditionalForms_.productForm.resources
+D:\EPAM Academy\GitHub_Gerbut1986\The-Manage-of-the-Products-\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7_UseOfAdditionalForms_.Form2.resources
+D:\EPAM Academy\GitHub_Gerbut1986\The-Manage-of-the-Products-\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7_UseOfAdditionalForms_.Properties.Resources.resources
+D:\EPAM Academy\GitHub_Gerbut1986\The-Manage-of-the-Products-\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7(UseOfAdditionalForms).csproj.GenerateResource.cache
+D:\EPAM Academy\GitHub_Gerbut1986\The-Manage-of-the-Products-\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7(UseOfAdditionalForms).csproj.CoreCompileInputs.cache
+D:\EPAM Academy\GitHub_Gerbut1986\The-Manage-of-the-Products-\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7(UseOfAdditionalForms).exe
+D:\EPAM Academy\GitHub_Gerbut1986\The-Manage-of-the-Products-\Task_7(UseOfAdditionalForms)\obj\Debug\Task_7(UseOfAdditionalForms).pdb

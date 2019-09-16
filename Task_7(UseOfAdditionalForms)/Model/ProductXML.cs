@@ -15,6 +15,13 @@
             this.price = price;
         }
 
+        public ProductXML(int id, string title, string country, string price)
+        {
+            this.title = title;
+            this.country = country;
+            this.price = price;
+        }
+
         public int Id { get { return id; } set { id = value; } }
         public string Title { get { return title; } set { title = value; } }
         public string Country { get { return country; } set { country = value; } }
@@ -29,6 +36,5 @@
         }
 
         public override string ToString() => $"{Id} - {Title} - {Country} - {Price}";
- 
     }
 }

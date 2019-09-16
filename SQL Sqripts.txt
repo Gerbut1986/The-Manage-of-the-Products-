@@ -1,0 +1,17 @@
+CREATE DATABASE MyDB;
+
+CREATE TABLE [dbo].[Products] (
+    [Id]      INT           IDENTITY (1, 1) NOT NULL,
+    [Title]   NVARCHAR (50) NULL,
+    [Country] NVARCHAR (50) NULL,
+    [Price]   NVARCHAR (50) NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+INSERT INTO [dbo].[Products](Title, Country, Price) VALUES('Apple iPad','USA','$1200');
+INSERT INTO [dbo].[Products](Title, Country, Price) VALUES('Dell Latitude','USA','$1980');
+INSERT INTO [dbo].[Products](Title, Country, Price) VALUES('Acer Aspire','Korea','$600');
+INSERT INTO [dbo].[Products](Title, Country, Price) VALUES('The Marijuana','Holland','$45');
+INSERT INTO [dbo].[Products](Title, Country, Price) VALUES('Visual Studio','USA','$1000');
+INSERT INTO [dbo].[Products](Title, Country, Price) VALUES('CLR','Microsoft','$2222');
+INSERT INTO [dbo].[Products](Title, Country, Price) VALUES('The Moon','Galaxy','$10000');

@@ -7,19 +7,19 @@
     using System.Windows.Forms;
     using Task_7_UseOfAdditionalForms_.Model;
 
-    static class ReadFromDatabase
+    public static class ReadFromDatabase
     {
         public static List<ProductXML> Read_Products_From_DB()
         {
             List<ProductXML> products = new List<ProductXML>();
-            string query = "SELECT ID, Title, Country, Price from dbo.Products";
+            string query = "SELECT Id, Title, Country, Price from dbo.Products";
             SqlConnection conn = null;
             SqlCommand cmd = null;
             SqlDataReader dReader = null;
 
             try
             {
-                using (conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Admin\Documents\The-Manage-of-the-Products-\Task_7(UseOfAdditionalForms)\Data\MyDB.mdf;Integrated Security=True"))
+                using (conn = new SqlConnection(Connect.ConnectionString))
                 {
                     using (cmd = new SqlCommand(query, conn))
                     {
@@ -41,7 +41,8 @@
             }
             catch (DataException ex)
             {
-                MessageBox.Show(ex.Message, "failed...Something went wrong..", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "failed...Something went wrong..", 
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {

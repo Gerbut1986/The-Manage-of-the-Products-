@@ -14,7 +14,7 @@
         public productForm()
         {
             InitializeComponent();
-            writer = new XmlTextWriter(@"C:\Users\Admin\Documents\The-Manage-of-the-Products-\Task_7(UseOfAdditionalForms)\Data\myProducts.xml", Encoding.Unicode);
+            writer = new XmlTextWriter(@"D:\EPAM Academy\GitHub_Gerbut1986\The-Manage-of-the-Products-\Task_7(UseOfAdditionalForms)\Data\myProducts.xml", Encoding.Unicode);
             listBox1.Items.AddRange(ReadFromDatabase.Read_Products_From_DB().ToArray());
         }
 
@@ -22,7 +22,7 @@
         {
             f2 = new Form2("ADD");
             f2.Text = "Add Product";
-            f2.Owner = this;//
+            f2.Owner = this;
             f2.ShowDialog();
         }
 
@@ -36,6 +36,8 @@
                 f2.Text = "Editing The Product";
                 f2.ShowDialog();
             }
+            else MessageBox.Show("First you must select some product!", "Make select", 
+                MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void productForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -68,7 +70,11 @@
         private void delBtn_Click(object sender, EventArgs e)
         {
             if (listBox1.SelectedItem != null)
+            {
+                ProductXML del = (ProductXML)listBox1.SelectedItem; 
                 listBox1.Items.RemoveAt(listBox1.SelectedIndex);
+                string res = Connect.DeleteProduct(del);   // Delete from Database
+            }
             else MessageBox.Show("You didn't select any element", "This has failed...", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 

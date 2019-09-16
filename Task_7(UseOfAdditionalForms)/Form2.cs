@@ -4,17 +4,17 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using Task_7_UseOfAdditionalForms_.Model;
+using System.Configuration;
 
 namespace Task_7_UseOfAdditionalForms_
 {
     public partial class Form2 : Form
     {
-        readonly string connectionString;
         string mode;
         ProductXML product;
+
         public Form2(string mode)
         {
-            connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Admin\Documents\The-Manage-of-the-Products-\Task_7(UseOfAdditionalForms)\Data\MyDB.mdf;Integrated Security=True";
             InitializeComponent();
             this.mode = mode;
         }
@@ -48,10 +48,10 @@ namespace Task_7_UseOfAdditionalForms_
                         else
                         {
                             ProductXML product = new ProductXML(titleTxt.Text, countryTxt.Text, priceTxt.Text);
-                            result = AddProduct(product);
+                            result = Connect.AddProduct(product);
 
                             if (result == "Product was added successfully")
-                            {                 
+                            {
                                 //List<ProductXML> products = new List<ProductXML>();
                                 (this.Owner as productForm).listBox1.Items.Add(product);
                                 MessageBox.Show("Add to List & Xml File & Database!", result, MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
@@ -71,35 +71,16 @@ namespace Task_7_UseOfAdditionalForms_
                 }
             }
             else if (mode.Equals("EDIT"))
-            {
+            {           
                 int index = (this.Owner as productForm).listBox1.Items.IndexOf(this.product);
+                ProductXML update = new ProductXML(titleTxt.Text, countryTxt.Text, priceTxt.Text);
                 (this.Owner as productForm).listBox1.Items.RemoveAt(index);
-                (this.Owner as productForm).listBox1.Items.Insert(index, new ProductXML(titleTxt.Text, countryTxt.Text, priceTxt.Text));
-                (this.Owner as productForm).listBox1.DisplayMember = "";
+                (this.Owner as productForm).listBox1.Items.Insert(index, update);
+                // (this.Owner as productForm).listBox1.DisplayMember = "";
+                string res = Connect.UpdateProduct(update);
                 this.Close();
             }
             else MessageBox.Show("Something went wrong...", "..failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        }
-
-        string AddProduct(ProductXML prod)
-        {
-            string msg = string.Empty;
-            string query = "INSERT INTO Products(Title, Country, Price) VALUES(@Title, @Country, @Price)";
-            SqlConnection conn = new SqlConnection(connectionString);
-            conn.Open();
-            SqlCommand cmd = new SqlCommand(query, conn);
-            cmd.Parameters.AddWithValue("@Title", prod.Title);
-            cmd.Parameters.AddWithValue("@Country", prod.Country);
-            cmd.Parameters.AddWithValue("@Price", prod.Price);
-
-            int result = cmd.ExecuteNonQuery();
-
-            if (result == 1)
-                msg = "Product was added successfully";
-            else
-                msg = "Product was NOT added. Please try it again";
-
-            return msg;
         }
 
         private void cancelBtn_Click(object sender, EventArgs e)
@@ -135,6 +116,16 @@ namespace Task_7_UseOfAdditionalForms_
         {
             (this.Owner as productForm).listBox1.Items.Clear();
             (this.Owner as productForm).listBox1.Items.AddRange(ReadFromDatabase.Read_Products_From_DB().ToArray());
+            // (this.Owner as productForm).listBox1.Sorted = true;
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            if (mode.Equals("EDIT"))
+            {
+                this.Text = $"Editing The Product with Id: {product.Id}";
+            }
+            else return; 
         }
     }
 }
