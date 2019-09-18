@@ -80,9 +80,9 @@
                     int result = cmd.ExecuteNonQuery();
 
                     if (result == 1)
-                        msg = "Product was Updated successfully";
+                        msg = "Product was Delete successfully";
                     else
-                        msg = "Product was NOT Update.. Something went wrong...";
+                        msg = "Product was NOT Delete.. Something went wrong...";
                 }
             }
 
