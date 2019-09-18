@@ -38,10 +38,10 @@
         }
 
         // Edit method:
-        public static string UpdateProduct(ProductXML prod)
+        public static string UpdateProduct(int id, ProductXML prod)
         {
             string msg = string.Empty;
-            string query = $"UPDATE Products SET Title = @Title, Country = @Country, Price = @Price WHERE Id = {prod.Id}";
+            string query = $"UPDATE Products SET Title = @Title, Country = @Country, Price = @Price WHERE Id = {id}";
             using (conn = new SqlConnection(ConnectionString))
             {
                 conn.Open();
@@ -56,7 +56,7 @@
                     if (result == 1)
                         msg = "Product was Updated successfully";
                     else
-                        msg = "Product was NOT Update.. Something went wrong...";
+                        msg = "Product was NOT Update..Something went wrong...";
                 }
             }
 

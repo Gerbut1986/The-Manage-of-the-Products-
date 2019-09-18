@@ -32,7 +32,7 @@
                             p.Id = Convert.ToInt32(dReader["id"]);
                             p.Title = dReader["title"].ToString();
                             p.Country = dReader["country"].ToString();
-                            p.Price = dReader["price"].ToString();
+                            p.Price = Convert.ToInt32(dReader["price"]);
 
                             products.Add(p);
                         }

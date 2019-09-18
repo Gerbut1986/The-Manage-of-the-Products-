@@ -36,8 +36,8 @@
                 f2.Text = "Editing The Product";
                 f2.ShowDialog();
             }
-            else MessageBox.Show("First you must select some product!", "Make select", 
-                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else MessageBox.Show("You didn't select any element", "This has failed...",
+                  MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void productForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -75,13 +75,15 @@
                 listBox1.Items.RemoveAt(listBox1.SelectedIndex);
                 string res = Connect.DeleteProduct(del);   // Delete from Database
             }
-            else MessageBox.Show("You didn't select any element", "This has failed...", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else MessageBox.Show("You didn't select any element", "This has failed...", 
+                MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void clearBtn_Click(object sender, EventArgs e)
         {
             if (listBox1.Items.Count == 0)
-                MessageBox.Show("ListBox is Empty!! First you need to add any Products", "EMPTY", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("ListBox is Empty!! First you need to add any Products", "EMPTY",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else listBox1.Items.Clear();
         }
     }

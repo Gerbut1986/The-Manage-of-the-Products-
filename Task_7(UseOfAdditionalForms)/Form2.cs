@@ -1,13 +1,11 @@
-﻿using System;
-using System.ComponentModel;
-using System.Data;
-using System.Data.SqlClient;
-using System.Windows.Forms;
-using Task_7_UseOfAdditionalForms_.Model;
-using System.Configuration;
-
-namespace Task_7_UseOfAdditionalForms_
+﻿namespace Task_7_UseOfAdditionalForms_
 {
+    using System;
+    using System.ComponentModel;
+    using System.Data;
+    using System.Windows.Forms;
+    using Task_7_UseOfAdditionalForms_.Model;
+
     public partial class Form2 : Form
     {
         string mode;
@@ -28,7 +26,7 @@ namespace Task_7_UseOfAdditionalForms_
             {
                 titleTxt.Text = product.Title;
                 countryTxt.Text = product.Country;
-                priceTxt.Text = product.Price;
+                priceTxt.Text = product.Price.ToString();
             }
         }
 
@@ -47,7 +45,7 @@ namespace Task_7_UseOfAdditionalForms_
                             MessageBox.Show("Some of Field is Empty!! Try To Fill it!", "Some field Empty", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         else
                         {
-                            ProductXML product = new ProductXML(titleTxt.Text, countryTxt.Text, priceTxt.Text);
+                            ProductXML product = new ProductXML(titleTxt.Text, countryTxt.Text, Convert.ToInt32(priceTxt.Text));
                             result = Connect.AddProduct(product);
 
                             if (result == "Product was added successfully")
@@ -71,13 +69,16 @@ namespace Task_7_UseOfAdditionalForms_
                 }
             }
             else if (mode.Equals("EDIT"))
-            {           
+            {
+                int price = Convert.ToInt32(priceTxt.Text);
                 int index = (this.Owner as productForm).listBox1.Items.IndexOf(this.product);
-                ProductXML update = new ProductXML(titleTxt.Text, countryTxt.Text, priceTxt.Text);
+                ProductXML update = new ProductXML(titleTxt.Text, countryTxt.Text, price);
+                int id = product.Id;
                 (this.Owner as productForm).listBox1.Items.RemoveAt(index);
                 (this.Owner as productForm).listBox1.Items.Insert(index, update);
                 // (this.Owner as productForm).listBox1.DisplayMember = "";
-                string res = Connect.UpdateProduct(update);
+                (this.Owner as productForm).Text = $"{Connect.UpdateProduct(id, update)}";
+
                 this.Close();
             }
             else MessageBox.Show("Something went wrong...", "..failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
